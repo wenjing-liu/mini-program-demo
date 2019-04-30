@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/popular/index",
+    "pages/me/index",
+    "pages/movie-detail/index",
+    "pages/review-detail/index",
+    "pages/review-list/index",
+    "pages/add-review/index",
+    "pages/preview-review/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "Kankan Movies",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

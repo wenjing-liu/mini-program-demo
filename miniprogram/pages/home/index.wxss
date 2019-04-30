@@ -1,0 +1,25 @@
+@import '../../style/base.wxss';
+
+.home-wrapper {
+
+}
+
+
+.home-wrapper .footer {
+  position: absolute;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  border-top: 4rpx solid #F6F6F6;
+  background-color: white;
+}
+
+.home-wrapper .footer .button {
+  margin:0;
+  border-radius:0;
+}
+
+.home-wrapper .footer .button image {
+  height: 80rpx;
+  width: 80rpx;
+}

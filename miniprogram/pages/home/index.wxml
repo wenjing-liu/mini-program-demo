@@ -1,0 +1,25 @@
+<view class='home-wrapper'>
+  <view class='content poster' wx:if="{{movie}}">
+    <navigator class='poster__image' url="{{'/pages/movie-detail/index?id=' + movie._id}}">
+      <image src='{{movie.image}}' mode='aspectFit'></image>
+    </navigator>
+    <view class='poster__tile'>{{movie.title}}</view>
+    <view class='poster__recom' wx:if='{{reviewAuthor.username}}'>
+      <navigator class='poster__recom--user' url="{{'pages/review-detail/index?id=' + movie._id}}">
+        <image src="{{reviewAuthor.avatar}}"></image>
+      </navigator>
+      <view class='poster__recom--content'>{{reviewAuthor.username}} recommended you a movie</view>
+    </view>
+  </view>
+  <view class='footer'>
+    <navigator class='button' url='/pages/popular/index'>
+      <image src='/images/popular.png' mode='aspectFit'></image>
+      <text class='button-label'>Popular</text>
+    </navigator>
+    <navigator class='button' url ='/pages/me/index'>
+      <image src='/images/me.png' mode='aspectFit'></image>
+      <text class='button-label'>Me</text>
+    </navigator>
+  </view>
+</view>
+
